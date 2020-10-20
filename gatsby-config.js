@@ -1,7 +1,7 @@
 module.exports = {
   plugins: [
     // https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/
-    // ファイル群を GraphQL で扱えるようにするための定義らしい
+    // ファイル群を GraphQL で扱えるようにするための定義
     {
       resolve: 'gatsby-source-filesystem',
       options: {
