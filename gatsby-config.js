@@ -20,6 +20,11 @@ module.exports = {
         gfm       : true,  // GitHub Flavored Markdown Mode (Default : true)
         plugins: []
       }
+    },
+    // https://www.gatsbyjs.com/plugins/gatsby-plugin-catch-links/
+    // Markdown 中の相対リンクを捉えて SPA として遷移させる
+    {
+      resolve: 'gatsby-plugin-catch-links'
     }
   ]
 };

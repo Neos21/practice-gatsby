@@ -5,8 +5,8 @@ export default class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark;
     return (
       <div>
-        <h1>{post.frontmatter.title}</h1>
-        <p>{post.frontmatter.date}</p>
+        <h1>{post.frontmatter.title || 'タイトルなし'}</h1>
+        <p>{post.frontmatter.date || '時刻なし'}</p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     )
