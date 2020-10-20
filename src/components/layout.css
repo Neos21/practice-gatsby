@@ -1,0 +1,5 @@
+/* Scoped ではないので html 要素セレクタを書いたりすると全ページに反映される */
+
+.layout-container {
+  border: 1px solid #999;
+}

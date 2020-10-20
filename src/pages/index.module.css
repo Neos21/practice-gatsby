@@ -1,0 +1,9 @@
+/*
+ * Scoped ではないので html 要素セレクタを書いたりすると全ページに反映される
+ * 
+ * `.module.css` は `import style from` で読み込み `<div className={style.my-class-name}>` のように使用する
+ */
+
+.myIndex {
+  color: #f00;
+}

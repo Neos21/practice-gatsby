@@ -1,0 +1,12 @@
+/*
+ * https://www.gatsbyjs.com/docs/recipes/styling-css/
+ * 
+ * グローバルな CSS
+ * 必ずこのディレクトリ・ファイル名で作成する必要がある
+ */
+
+html {
+  overflow: hidden scroll;
+  font-size: clamp(17px, 1.7vw, 20px);
+  font-family: sans-serif;
+}

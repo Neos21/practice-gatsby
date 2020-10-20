@@ -9,6 +9,11 @@ module.exports = {
         name: 'pages'
       }
     },
+    // https://www.gatsbyjs.com/plugins/gatsby-plugin-sharp/
+    // Markdown 中で画像を扱えるようにする・gatsby-remark-images とセットで必要
+    {
+      resolve: 'gatsby-plugin-sharp'
+    },
     // https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/
     // Markdown パーサ
     {
@@ -18,7 +23,14 @@ module.exports = {
         footnotes : true,  // Footnotes Mode (Default : true)
         pedantic  : true,  // Pedantic Mode (Default : true)
         gfm       : true,  // GitHub Flavored Markdown Mode (Default : true)
-        plugins: []
+        plugins: [
+          // https://www.gatsbyjs.com/plugins/gatsby-remark-images/
+          // Markdown 中で画像を扱えるようにする・gatsby-plugin-sharp が必要
+          {
+            resolve: 'gatsby-remark-images',
+            options: {}
+          }
+        ]
       }
     },
     // https://www.gatsbyjs.com/plugins/gatsby-plugin-catch-links/
